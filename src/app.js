@@ -3,6 +3,8 @@ import routes from "./routes";
 import "./database";
 import { resolve } from "node:path";
 import cors from "cors";
+import 'dotenv/config';
+
 
 const CorsOptions = {
     origin: "https://code-burger-front-end-tau.vercel.app/login",

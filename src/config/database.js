@@ -1,10 +1,10 @@
 module.exports = {
     dialect: "postgres",
-    url: process.env.DATABASE_URL,
+    url: process.env.DATABASE_URL, // Certifique-se de que DATABASE_URL está corretamente definida
     dialectOptions: {
         ssl: {
             require: true,
-            rejectUnauthorized: false,
+            rejectUnauthorized: false, // Para desenvolvimento, ajustar em produção
         },
     },
     define: {
@@ -12,5 +12,4 @@ module.exports = {
         underscored: true,
         underscoredAll: true,
     },
-
 };
