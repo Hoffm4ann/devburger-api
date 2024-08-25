@@ -1,3 +1,19 @@
-import app from "./app";
+import express from 'express';
+import dotenv from 'dotenv';
 
-app.listen(3001, () => console.log("Server is running at port 3001..."));
+dotenv.config();
+
+const app = express();
+const port = process.env.PORT || 3001;
+
+app.use(express.json());
+
+app.get('/', (req, res) => {
+    res.send('Hello from Vercel!');
+});
+
+app.listen(port, () => {
+    console.log(`Server is running on port ${port}`);
+});
+
+export default app;
