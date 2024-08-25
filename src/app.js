@@ -5,7 +5,7 @@ import { resolve } from "node:path";
 import cors from "cors";
 
 const CorsOptions = {
-    origin: "http://localhost:3000 ",
+    origin: "https://code-burger-front-end-tau.vercel.app/login",
     credentials: true,
 }
 
