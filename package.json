@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "main": "src/server.js",
   "scripts": {
-    "dev": "nodemon",
-    "vercel-build": "npx sequelize-cli db:migrate"
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "vercel-build": "echo 'No build steps required'"
   },
   "keywords": [],
   "author": "Diego Alan Hoffmann",
